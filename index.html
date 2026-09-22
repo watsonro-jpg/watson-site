@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Watson — Programar é assim!</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="scanlines" aria-hidden="true"></div>
+
+  <header class="site-header">
+    <div class="terminal-bar">
+      <span class="dot dot--red"></span>
+      <span class="dot dot--yellow"></span>
+      <span class="dot dot--green"></span>
+      <span class="terminal-path">watson@dev:~$</span>
+    </div>
+    <nav class="site-nav">
+      <a href="#opcoes">Opções</a>
+      <a href="#menu">Linguagem de Programação</a>
+      <a href="#reserva">Reservar</a>
+      <a href="#horario">Horário</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <div class="hero__content">
+      <p class="hero__prompt">$ whoami</p>
+      <h1 class="hero__name">Watson<span class="cursor">_</span></h1>
+      <p class="hero__slogan">Programar é assim!</p>
+    </div>
+  </section>
+
+  <main>
+    <section class="options" id="opcoes">
+      <h2 class="section__title"><span class="section__prompt">$</span> ls opcoes/</h2>
+      <div class="options__grid">
+        <article class="option">
+          <span class="option__tag">site</span>
+          <p class="option__desc">Sites institucionais, portfólios e landing pages.</p>
+        </article>
+        <article class="option">
+          <span class="option__tag">app</span>
+          <p class="option__desc">Aplicativos para celular, Android e iOS.</p>
+        </article>
+        <article class="option">
+          <span class="option__tag">aplicativo</span>
+          <p class="option__desc">Sistemas web sob medida, com login e painel.</p>
+        </article>
+        <article class="option">
+          <span class="option__tag">programa</span>
+          <p class="option__desc">Softwares de desktop para o seu computador.</p>
+        </article>
+      </div>
+    </section>
+    <section class="menu" id="menu">
+      <h2 class="section__title"><span class="section__prompt">$</span> cat linguagem_de_programacao.dev</h2>
+
+      <div class="menu__grid">
+
+        <article class="card">
+          <div class="card__top">
+            <span class="card__index">01</span>
+            <span class="card__lang">Python</span>
+          </div>
+          <h3 class="card__name">Script Automatizador</h3>
+          <p class="card__desc">Automação de tarefas repetitivas, planilhas e rotinas do dia a dia.</p>
+          <p class="card__price">R$ 150,00</p>
+        </article>
+
+        <article class="card">
+          <div class="card__top">
+            <span class="card__index">02</span>
+            <span class="card__lang">JavaScript</span>
+          </div>
+          <h3 class="card__name">Landing Page Dinâmica</h3>
+          <p class="card__desc">Página única com interações, animações e formulário de contato.</p>
+          <p class="card__price">R$ 480,00</p>
+        </article>
+
+        <article class="card">
+          <div class="card__top">
+            <span class="card__index">03</span>
+            <span class="card__lang">PHP</span>
+          </div>
+          <h3 class="card__name">Sistema de Login</h3>
+          <p class="card__desc">Autenticação de usuários com banco de dados e painel administrativo.</p>
+          <p class="card__price">R$ 620,00</p>
+        </article>
+
+        <article class="card">
+          <div class="card__top">
+            <span class="card__index">04</span>
+            <span class="card__lang">Java</span>
+          </div>
+          <h3 class="card__name">App Desktop</h3>
+          <p class="card__desc">Aplicativo de mesa sob medida para controle e gestão do seu negócio.</p>
+          <p class="card__price">R$ 950,00</p>
+        </article>
+
+        <article class="card">
+          <div class="card__top">
+            <span class="card__index">05</span>
+            <span class="card__lang">React</span>
+          </div>
+          <h3 class="card__name">Loja Virtual</h3>
+          <p class="card__desc">E-commerce completo com catálogo, carrinho e pagamento integrado.</p>
+          <p class="card__price">R$ 1.800,00</p>
+        </article>
+
+        <article class="card">
+          <div class="card__top">
+            <span class="card__index">06</span>
+            <span class="card__lang">C#</span>
+          </div>
+          <h3 class="card__name">Bot Personalizado</h3>
+          <p class="card__desc">Robô sob medida para Discord, Telegram ou WhatsApp Business.</p>
+          <p class="card__price">R$ 700,00</p>
+        </article>
+
+      </div>
+    </section>
+
+    <section class="reserve" id="reserva">
+      <h2 class="section__title"><span class="section__prompt">$</span> ./reservar.sh</h2>
+      <form class="reserve__form" id="reserve-form">
+        <label class="reserve__field">
+          <span>Nome</span>
+          <input type="text" name="nome" placeholder="Seu nome" required>
+        </label>
+        <label class="reserve__field">
+          <span>Telefone</span>
+          <input type="tel" name="telefone" placeholder="(82) 9xxxx-xxxx" required>
+        </label>
+        <label class="reserve__field">
+          <span>Número de pessoas</span>
+          <input type="number" name="pessoas" min="1" placeholder="1" required>
+        </label>
+        <label class="reserve__field">
+          <span>Data</span>
+          <input type="date" name="data" required>
+        </label>
+        <button type="submit" class="reserve__submit">Reservar pelo WhatsApp</button>
+      </form>
+    </section>
+
+    <section class="hours" id="horario">
+      <h2 class="section__title"><span class="section__prompt">$</span> cat horario.log</h2>
+      <ul class="hours__list">
+        <li><span>Segunda a sexta</span><span>08h — 18h</span></li>
+        <li><span>Sábado</span><span>09h — 13h</span></li>
+        <li><span>Domingo</span><span class="hours__closed">Fechado</span></li>
+      </ul>
+    </section>
+  </main>
+
+  <footer class="cta">
+    <p class="cta__text">Pronto para tirar sua ideia do papel?</p>
+    <a
+      class="cta__button"
+      href="https://wa.me/5582999679207?text=Ol%C3%A1%2C%20Watson!%20Vim%20pelo%20site%20e%20quero%20contratar%20um%20servi%C3%A7o."
+      target="_blank"
+      rel="noopener noreferrer"
+    >
+      Contratar no WhatsApp
+    </a>
+  </footer>
+
+  <script>
+    document.getElementById('reserve-form').addEventListener('submit', function (e) {
+      e.preventDefault();
+
+      const form = e.target;
+      const nome = form.elements.nome.value.trim();
+      const telefone = form.elements.telefone.value.trim();
+      const pessoas = form.elements.pessoas.value.trim();
+      const dataInput = form.elements.data.value;
+
+      const dataFormatada = dataInput
+        ? new Date(dataInput + 'T00:00:00').toLocaleDateString('pt-BR')
+        : '';
+
+      const mensagem =
+        'Olá, Watson! Quero reservar um projeto.\n' +
+        `Nome: ${nome}\n` +
+        `Telefone: ${telefone}\n` +
+        `Número de pessoas: ${pessoas}\n` +
+        `Data: ${dataFormatada}`;
+
+      const url = 'https://wa.me/5582999679207?text=' + encodeURIComponent(mensagem);
+      window.open(url, '_blank', 'noopener');
+    });
+  </script>
+
+</body>
+</html>
